@@ -1,0 +1,23 @@
+{
+  "name": "service-x",
+  "version": "0.0.1",
+  "description": "Service/App",
+  "main": "src/service.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeeo/service-structure.git"
+  },
+  "keywords": [
+    "service",
+    "boilerplate"
+  ],
+  "author": "Raul Geana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xeeo/service-structure/issues"
+  },
+  "homepage": "https://github.com/xeeo/service-structure#readme"
+}
