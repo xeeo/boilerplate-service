@@ -1,8 +1,13 @@
 {
   "name": "service-x",
   "version": "0.0.1",
+  "private": false,
   "description": "Service/App",
   "main": "src/service.js",
+  "engines": {
+    "node": "~0.10.28",
+    "npm": "~1.4.28"
+  },
   "scripts": {
     "start": "forever src/service.js",
     "test": "mocha"
