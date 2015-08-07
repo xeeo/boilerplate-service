@@ -4,7 +4,8 @@
   "description": "Service/App",
   "main": "src/service.js",
   "scripts": {
-    "test": "make test"
+    "start": "forever src/service.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
