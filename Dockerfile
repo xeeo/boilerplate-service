@@ -6,6 +6,8 @@ RUN npm install -g grunt-cli
 
 COPY ./src /service
 WORKDIR /service
+RUN mkdir logs
+RUN mkdir files
 RUN rm -rf node_modules
 RUN npm install
 
