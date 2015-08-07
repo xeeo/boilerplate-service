@@ -1,0 +1,10 @@
+service:
+  image: node:0.10
+  volumes:
+    - src:/service
+    - logs:/service/logs
+    - files:/service/files
+  ports:
+    - "3000:3000"
+  environment:
+    NODE_ENV: development
