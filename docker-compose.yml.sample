@@ -5,7 +5,7 @@ service:
   - logs:/service/logs
   - files:/service/files
  ports:
-  - "52022":"22"
+  - "52022:22"
   - "3000:3000"
   - "5858:5858"
  environment:
