@@ -1,1 +1,1 @@
-# service-boilerplate
+# boilerplate-service
