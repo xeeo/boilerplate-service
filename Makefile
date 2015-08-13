@@ -3,6 +3,9 @@ CURRENT_DIRECTORY := $(shell pwd)
 start:
 	@docker-compose up
 
+build:
+	@docker-compose build
+
 clean:
 	@docker-compose rm --force
 
