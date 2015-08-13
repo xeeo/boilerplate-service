@@ -1,1 +1,1 @@
-# service-structure
+# service-boilerplate

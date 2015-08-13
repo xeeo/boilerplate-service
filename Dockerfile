@@ -1,26 +1,25 @@
 FROM node:0.10
 
-MAINTAINER Raul Geana, geana.raul@icloud.com
+ENV HOME /home
+ENV SERVICE_HOME /home/service
 
-# Set up the main working directory
-WORKDIR /service
+RUN npm install nodemon -g
+RUN npm install mocha -g
+RUN npm install istanbul -g
 
-# Install Mean.JS Prerequisites
-RUN npm install -g grunt-cli
-RUN npm install -g forever
+RUN mkdir $SERVICE_HOME
+RUN mkdir $HOME/logs
+RUN mkdir $HOME/files
+WORKDIR $SERVICE_HOME
 
-ADD package.json /home/mean/package.json
+ADD ./service/package.json $SERVICE_HOME/package.json
 
-COPY ./src /service
-WORKDIR /service
-RUN mkdir logs
-RUN mkdir files
-RUN rm -rf node_modules
-RUN npm install --production
+RUN npm install
+RUN mv node_modules ../
 
-ENV NODE_ENV production
+ADD ./service $SERVICE_HOME
 
-# Port 3000 for server
 EXPOSE 3000
+EXPOSE 5858
 
-ENTRYPOINT ["/nodejs/bin/npm", "start"]
+CMD npm start

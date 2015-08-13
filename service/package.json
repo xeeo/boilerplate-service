@@ -1,24 +1,19 @@
 {
-    "name": "service-x",
+    "name": "boilerplate-service",
     "version": "0.0.1",
     "private": false,
-    "description": "Service/App",
+    "description": "Service Boilerplate",
     "bugs": {
-        "url": "https://github.com/xeeo/service-structure/issues"
+        "url": "https://github.com/xeeo/boilerplate-service/issues"
     },
-    "homepage": "https://github.com/xeeo/service-structure#readme",
-    "main": "app/src/service.js",
-    "engines": {
-        "node": "~0.10.28",
-        "npm": "~1.4.28"
-    },
+    "homepage": "https://github.com/xeeo/boilerplate-service#readme",
     "scripts": {
-        "start": "forever src/service.js",
+        "start": "nodemon service.js",
         "test": "mocha test/**/*.mocha.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/xeeo/service-structure.git"
+        "url": "git+https://github.com/xeeo/boilerplate-service.git"
     },
     "keywords": [
         "service",
@@ -27,7 +22,7 @@
     "author": "Raul Geana",
     "license": "MIT",
     "dependencies": {
-        "hapi": "^8.8.1",
+        "glue": "^2.1.1",
         "joi": "^6.6.1",
         "q": "^1.4.1"
     },
