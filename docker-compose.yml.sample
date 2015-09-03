@@ -1,7 +1,7 @@
 service:
  build: .
  volumes:
-  - service:/home/service
+  - service:/home/src
   - logs:/home/logs
   - files:/home/files
  ports:

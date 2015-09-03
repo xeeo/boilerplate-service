@@ -1,7 +1,7 @@
 FROM node:0.10
 
 ENV HOME /home
-ENV SERVICE_HOME /home/service
+ENV SERVICE_HOME /home/src
 
 RUN npm install nodemon -g
 RUN npm install mocha -g
